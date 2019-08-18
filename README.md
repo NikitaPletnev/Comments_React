@@ -1,2 +1,3 @@
-# Comments_React
-Simple comment widget on React
+Homework 15
+
+В консоли введите npm start 
