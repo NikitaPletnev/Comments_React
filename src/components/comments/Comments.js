@@ -56,8 +56,8 @@ class Comments extends Component {
 
         const data = {
             id: `comment_${Math.ceil(Math.random()*1000)}`,
-            author: e.target.author.value,
-            text: e.target.text.value,
+            author: e.target.author.value.replace(/(\<(\/?[^>]+)>)/g, ''),
+            text: e.target.text.value.replace(/(\<(\/?[^>]+)>)/g, ''),
             date: new Date().getTime()
         };
 
